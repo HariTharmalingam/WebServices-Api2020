@@ -1,3 +1,11 @@
+# Installation
+
+    $ npm install
+
+    $ mongod
+
+    $npm run start
+
 # API Users
 
 ## Overview
@@ -92,6 +100,61 @@ Get an user by id.
 
 * HTTP request : GET → user/show/:id
 
-#### Parameters :
+#### Response :
 ```javascript
+{
+  'first_name': 'Cyril', // optionnal
+  'last_name': 'Vimard', // optionnal
+  'email': 'xzen769@gmail.com', // required
+  'password': '123456789', // required
+  'age': 32, // optionnal
+  'gender': 'm', // optionnal,
+  'height': 1.90, // optionnal
+  'weight': 90, // optionnal
+  'city': 'Paris', // optionnal
+  'city_code': '75000', // optionnal
+  'street_number': 13, // optionnal
+  'street_type': 'rue', // optionnal
+  'street_name': 'de cambrai', // optionnal
+  'phone': '0606060606', // optionnal
+  'image_profil': 'https://www.mediacritik.com/wp-content/uploads/2019/04/rs_1024x759-170407142939-1024.Peter-Dinklage-Game-of-Thrones.kg_.040717.jpg' // optionnal
+}
+```
+
+---
+#### [Update] update user 
+Update a single user by ID.
+|                            |                  |
+|----------------------------|------------------|
+| Requires authentication ?  | No               |
+| Who can use it ?           | Owner and users  |
+| Response formats           | application/json |
+
+
+- HTTP request : PUT -> user/update/:id
+ 
+#### Parameters
+{
+    'first_name': 'Hari',
+    'last_name': 'Tharmalingam'
+}
+#### Response
+``` javascript
+{
+  'first_name': 'Hari', // optionnal
+  'last_name': 'Tharmalingam', // optionnal
+  'email': 'xzen769@gmail.com', // required
+  'password': '123456789', // required
+  'age': 32, // optionnal
+  'gender': 'm', // optionnal,
+  'height': 1.90, // optionnal
+  'weight': 90, // optionnal
+  'city': 'Paris', // optionnal
+  'city_code': '75000', // optionnal
+  'street_number': 13, // optionnal
+  'street_type': 'rue', // optionnal
+  'street_name': 'de cambrai', // optionnal
+  'phone': '0606060606', // optionnal
+  'image_profil': 'https://www.mediacritik.com/wp-content/uploads/2019/04/rs_1024x759-170407142939-1024.Peter-Dinklage-Game-of-Thrones.kg_.040717.jpg' // optionnal
+}
 ```

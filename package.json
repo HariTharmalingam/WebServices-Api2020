@@ -1,27 +1,28 @@
 {
-  "name": "@so-xzen/api-2020",
+  "name": "WebServices-Api2020",
   "version": "1.0.0",
   "description": "## Overview It's CRUDS api for managed all users.",
   "main": "index.js",
   "scripts": {
-    "build": "yarn install && eslint ./app/* index.js && yarn start",
-    "start": "eslint ./app/* index.js && node index.js",
+    "build": "yarn install && eslint ./test* ./app/* index.js && yarn start",
+    "start": "eslint ./test* ./app/* index.js && node index.js",
     "test": "mocha",
-    "lint": "eslint ./app/* index.js"
+    "lint": "eslint ./test* ./app/* ./test* index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xzen/api-2020.git"
+    "url": "git+https://github.com/HariTharmalingam/WebServices-Api2020.git"
   },
-  "author": "",
+  "author": "HariTharmalingam",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/xzen/api-2020/issues"
+    "url": "https://github.com/HariTharmalingam/WebServices-Api2020/issues"
   },
   "dependencies": {
     "body-parser": "1.18.3",
     "compression": "1.7.2",
     "cors": "2.8.4",
+    "crypto-js": "^4.0.0",
     "express": "4.16.3",
     "helmet": "3.12.1",
     "mongoose": "5.1.4",

@@ -158,3 +158,25 @@ Update a single user by ID.
   'image_profil': 'https://www.mediacritik.com/wp-content/uploads/2019/04/rs_1024x759-170407142939-1024.Peter-Dinklage-Game-of-Thrones.kg_.040717.jpg' // optionnal
 }
 ```
+
+---
+#### [Delete] Delete user 
+Delete a single user by ID.
+|User|Api|
+|---|---|
+|                            |                  |
+|----------------------------|------------------|
+| Requires authentication ?  | No               |
+| Who can use it ?           | Owner and users  |
+| Response formats           | application/json |
+
+
+- HTTP request : DELETE -> user/delete/:id
+- Header request: token: Valid user token
+ 
+#### Parameters
+    user/delete/12483hdhd2838
+
+#### Response
+
+
